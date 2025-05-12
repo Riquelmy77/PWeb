@@ -10,6 +10,6 @@ nome da rota
 3. Em signin , criar uma rota (/users/:userid) que recebe o userid do usuário e exibe na página uma msg
 de boas vindas usando esse valor
 4. Caso o usuário acesse sem userid é direcionado a página signup (pesquise como usar
-res.redirect() )
+res.redirect() )  
   5.Qualquer outra página que não tenha a rota indicada é direcionada para página de erro 404 com link
 para o index (pesquise como usar res.status() )
