@@ -36,7 +36,12 @@ app.get('/signup', (req, res) => {
     res.send('Sign Up');
 });
 
-
+app.use((req, res) => {
+  res.status(404).send(`
+    <h1>Erro 404 - Página não encontrada</h1>
+    <a href="/">Voltar pro começo</a>
+  `);
+});
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
