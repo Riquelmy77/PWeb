@@ -1,4 +1,4 @@
-# Atividade - 06 (Exoress)
+# Atividade - 06 (Express)
 ## Feito por: Riquelmy da Silva Ricarte
 
 # Enunciado:
