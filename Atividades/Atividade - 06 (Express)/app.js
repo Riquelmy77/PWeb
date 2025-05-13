@@ -5,6 +5,7 @@ const port = 3000;
 
 app.use((req, res, next) => {
     console.log(`Acesso à rota: ${req.method} ${req.url}`);
+    req.requestTime = new Date().toLocaleString();
     next();
 });
 
@@ -23,16 +24,11 @@ app.get('/users', (req, res) => {
     res.redirect('/signup');
 });
 
-app.get('/signin', (req, res) => {
-    res.send('Sign In');
+app.get('/users/signin/:userid', (req, res) => {
+    res.send('Bem vindo, contemplado' + ` ${req.params.userid}`);
 });
 
-app.get('/users/:userid', (req, res) => {
-    const { userid } = req.params;
-    res.send('Bem vindo, contemplado' + ` ${userid}`);
-});
-
-app.get('/signup', (req, res) => {
+app.get('/users/signup', (req, res) => {
     res.send('Sign Up');
 });
 
