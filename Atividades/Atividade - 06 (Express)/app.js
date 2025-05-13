@@ -24,6 +24,10 @@ app.get('/users', (req, res) => {
     res.redirect('/signup');
 });
 
+app.get('/users/signin', (req, res) => {
+    res.send('Sign In');
+});
+
 app.get('/users/signin/:userid', (req, res) => {
     res.send('Bem vindo, contemplado' + ` ${req.params.userid}`);
 });
