@@ -1,5 +1,5 @@
 # Atividade Aula 13
-## RIquelmy da Silva Ricarte
+## Riquelmy da Silva Ricarte
 •
 
 ## Enunciado:
