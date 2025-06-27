@@ -1,0 +1,36 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: linear-gradient(150deg, orange, gray);
+}
+
+a {
+  color: #00B7FF;
+}
+
+.container {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn.btn-primary {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: rgb(85, 84, 84);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn.btn-primary:hover {
+  background-color: orange; 
+  color: black; 
+}
+.span-title {
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+  font-size: large;
+}
